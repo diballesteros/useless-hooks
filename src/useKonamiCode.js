@@ -19,6 +19,7 @@ export default function useKonamiCode({ onKonamiCode }) {
 	const [isKonamiCode, setIsKonamiCode] = useState(false);
 
 	useEffect(() => {
+		console.log(code);
 		if (code?.join(',') === KONAMI_CODE) {
 			setIsKonamiCode(true);
 			setCode([]);
@@ -27,7 +28,8 @@ export default function useKonamiCode({ onKonamiCode }) {
 	}, [code]);
 
 	const handleKeyDown = (e) => {
-		if (!KONAMI_KEYS.includes(e.key)) {
+		console.log(e.keyCode);
+		if (!KONAMI_KEYS.includes(e.keyCode)) {
 			setCode([]);
 			return;
 		}

@@ -1,1 +1,1 @@
-export { default as useKonamiCode } from 'src/useKonamiCode';
+export { default as useKonamiCode } from './src/useKonamiCode';
