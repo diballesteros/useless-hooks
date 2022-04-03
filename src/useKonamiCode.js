@@ -19,7 +19,7 @@ export default function useKonamiCode({ onKonamiCode }) {
 	const [isKonamiCode, setIsKonamiCode] = useState(false);
 
 	useEffect(() => {
-		if (code === KONAMI_CODE) {
+		if (code?.join(',') === KONAMI_CODE) {
 			setIsKonamiCode(true);
 			setCode([]);
 			onKonamiCode();
