@@ -1,6 +1,6 @@
 {
 	"name": "@diballesteros/useless-hooks",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"description": "A group of useless react hooks",
 	"main": "index.js",
 	"scripts": {
@@ -20,6 +20,6 @@
 	},
 	"homepage": "https://github.com/diballesteros/useless-hooks#readme",
 	"dependencies": {
-		"react": "^16.13.1"
+		"react": "^17.0.2"
 	}
 }
