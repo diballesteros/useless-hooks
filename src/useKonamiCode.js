@@ -1,18 +1,7 @@
 import { useState, useEffect } from 'react';
 
 const KONAMI_CODE = '38,38,40,40,37,39,37,39,66,65';
-const KONAMI_KEYS = [
-	'38',
-	'38',
-	'40',
-	'40',
-	'37',
-	'39',
-	'37',
-	'39',
-	'66',
-	'65',
-];
+const KONAMI_KEYS = [38, 40, 37, 39, 66, 65];
 
 export default function useKonamiCode({ onKonamiCode }) {
 	const [code, setCode] = useState([]);
@@ -33,7 +22,7 @@ export default function useKonamiCode({ onKonamiCode }) {
 			setCode([]);
 			return;
 		}
-		setCode(code + e.keyCode);
+		setCode([...code, e.keyCode]);
 	};
 
 	useEffect(() => {

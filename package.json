@@ -1,6 +1,6 @@
 {
 	"name": "@diballesteros/useless-hooks",
-	"version": "1.0.8",
+	"version": "1.0.9",
 	"description": "A group of useless react hooks",
 	"main": "index.js",
 	"scripts": {
